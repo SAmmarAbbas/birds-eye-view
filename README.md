@@ -1,6 +1,8 @@
 # birds-eye-view
 
-Welcome to the code repository for obtaining the bird's eye view of a scene from a single input image. The code estimates the homography matrix for a bird's eye view transformation along with some of the cameras's intrinsic and extrinsic parameters.
+Welcome to the code repository for ["A Geometric Approach to Obtain a Bird's Eye View from an Image", Ammar Abbas, Andrew Zisserman](https://arxiv.org/abs/1905.02231). The code estimates the homography matrix for a bird's eye view transformation along with some of the cameras's intrinsic and extrinsic parameters.
+
+![Figure](figure.png "Main Figure")
 
 ## Pre-requisites
 
@@ -67,3 +69,17 @@ where:
 __$IMAGE_PATH:__ path to the image
 
 __$CNN_MODEL:__ name of the cnn model you want to use (available options: vgg-16, inception-v4) 
+
+### Citation
+
+If you find the repo useful for your research, please consider citing our paper: 
+```
+@inproceedings{abbas2019geometric,
+  title={A Geometric Approach to Obtain a Bird's Eye View From an Image},
+  author={Abbas, Syed Ammar and Zisserman, Andrew},
+  booktitle={2019 IEEE/CVF International Conference on Computer Vision Workshop (ICCVW)},
+  pages={4095--4104},
+  year={2019},
+  organization={IEEE}
+}
+```
