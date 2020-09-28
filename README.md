@@ -38,11 +38,15 @@ python scripts/generate_carla_van_dataset.py
 
 ### Training on CARLA-VP dataset
 
-Open the terminal and type:
+Please find the dataset [here](https://drive.google.com/open?id=1o9ydKCnh0oyIMFAw7oNxQohFa0XM4V-g). It contains the ground truth values for all the three orthogonal vanishing points with the corresponding internal camera matrices, and tilt and roll of the camera for each image.
+
+You can convert it to `.tf_records` format using the script `scripts/convert_raw_carla_van_to_tfrecords.py` 
+
+Now, for training on the dataset, you can use the following command with appropriate values for the parameters:
 
 ```
 python scripts/train_carla_van_horizon_vpz.py \
-  --dataset_dir=<train-CARLA-VP.tfrecords \
+  --dataset_dir=<train-CARLA-VP.tfrecords> \
   --train_dir=<experiment_dir> \
   --checkpoint_path=<vgg_16.ckpt> \
   --checkpoint_exclude_scopes=vgg_16/fc8 \
