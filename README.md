@@ -38,9 +38,15 @@ python scripts/generate_carla_van_dataset.py
 
 ### Training on CARLA-VP dataset
 
+#### Data
 Please find the dataset [here](https://drive.google.com/open?id=1o9ydKCnh0oyIMFAw7oNxQohFa0XM4V-g). It contains the ground truth values for all the three orthogonal vanishing points with the corresponding internal camera matrices, and tilt and roll of the camera for each image.
 
 You can convert it to `.tf_records` format using the script `scripts/convert_raw_carla_van_to_tfrecords.py` 
+
+#### Checkpoints
+The Git LFS has exceeded the data quota. So please download data from [here](https://drive.google.com/file/d/1ABAWqGyJQqVT7moxfbJsQSDAUErTg7XT/view?usp=sharing) instead. Extract the folder `data` into the main directory.
+
+#### Command
 
 Now, for training on the dataset, you can use the following command with appropriate values for the parameters:
 
