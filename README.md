@@ -44,7 +44,7 @@ Please find the dataset [here](https://drive.google.com/open?id=1o9ydKCnh0oyIMFA
 You can convert it to `.tf_records` format using the script `scripts/convert_raw_carla_van_to_tfrecords.py` 
 
 #### Checkpoints
-The Git LFS has exceeded the data quota. So please download data from [here](https://drive.google.com/file/d/1ABAWqGyJQqVT7moxfbJsQSDAUErTg7XT/view?usp=sharing) instead. Extract the folder `data` into the main directory.
+The Git LFS has exceeded the data quota. So please download data from [here](https://drive.google.com/drive/folders/1MKA1us870S66oBFDz3etaMesLhlis9XA?usp=sharing) instead. Extract the folder `data` into the main directory.
 
 #### Command
 
